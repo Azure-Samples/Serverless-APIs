@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "Products"
+		},
+		{
+			"path": "Reviews"
+		},
+		{
+			"path": "Tests"
+		}
+	],
+	"settings": {
+		"debug.internalConsoleOptions": "neverOpen"
+	}
+}

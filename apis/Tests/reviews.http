@@ -1,0 +1,5 @@
+@baseurl = http://localhost:7071/api
+
+### Get all reviews
+GET {{baseurl}}/reviews
+
