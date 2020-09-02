@@ -11,3 +11,22 @@ DELETE {{baseurl}}/products
 
 ### Delete product by ID
 DELETE {{baseurl}}/products/1
+
+### Add product
+POST {{baseurl}}/products
+Content-Type: application/application/json
+
+{
+    "id": 500,
+    "name": "new product",
+    "description": "new product description"
+}
+
+### Update product
+PUT {{baseurl}}/products/1
+Content-Type: application/json
+
+{
+    "name": "new product update",
+    "description": "new product description"
+}
