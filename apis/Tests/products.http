@@ -2,3 +2,6 @@
 
 ### Get all products
 GET {{baseurl}}/products
+
+### Get product by ID
+GET {{baseurl}}/products/1
