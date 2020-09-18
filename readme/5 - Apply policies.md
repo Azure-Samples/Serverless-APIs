@@ -4,7 +4,7 @@ In this exercise we will protect our API from abuse by applying a throttling pol
 
 ## Why use policies API Management
 
-In Azure API Management, policies are a powerful capability that allows API publisher to change the behavior of APIs - while processing requests or responses. Popular policies include format conversion from XML to JSON, rate limiting to restrict the amount of incoming calls, validation of JWT tokens or certificates to secure APIs, caching to accelerate API calls, and more. API Management comes with around 45 built-in policies, which can be further extended with policy expressions - snippets of C# code.
+In Azure API Management, policies are a powerful capability that allows API publisher to change the behavior of APIs - while processing requests or responses. Popular policies include format conversion from XML to JSON, rate limiting to restrict the amount of incoming calls, validation of JWT tokens or certificates to secure APIs, caching to accelerate API calls, CORS to allow cross-origin resource sharing, and more. API Management comes with around 45 built-in policies, which can be further extended with policy expressions - snippets of C# code.
 
 Learn about policies in [the official Azure documentation](https://docs.microsoft.com/azure/api-management/api-management-howto-policies), [browse the available policies](https://docs.microsoft.com/azure/api-management/api-management-policies), and [understand the policy expressions](https://docs.microsoft.com/azure/api-management/api-management-policy-expressions).
 
