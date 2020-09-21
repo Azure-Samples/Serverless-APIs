@@ -7,6 +7,11 @@
       "request": "attach",
       "port": 9229,
       "preLaunchTask": "func: host start --port 7071"
+    },
+    {
+      "name": "Local Process with Kubernetes",
+      "type": "local-process-with-kubernetes.configuration",
+      "request": "launch"
     }
   ]
 }
