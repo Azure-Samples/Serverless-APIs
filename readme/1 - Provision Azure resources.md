@@ -52,4 +52,4 @@ And that's it :)
 
 ## Next steps
 
-[Import APIs into Azure API Management](2 - Import APIs.md)
+[Import APIs into Azure API Management](./2%20-%20Import%20APIs.md)

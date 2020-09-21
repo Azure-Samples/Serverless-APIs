@@ -50,4 +50,4 @@ Perform the following steps to make sure your API has been imported correctly. R
 
 ## Next steps
 
-[Package APIs with Products](./3%20-%20Products)
+[Package APIs with Products](./3%20-%20Products.md)
