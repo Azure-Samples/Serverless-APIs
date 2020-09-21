@@ -30,7 +30,6 @@ Perform the following steps **for both Function Apps you provisioned in the prev
 1. Select the **Link API** button.
 1. Make sure all the Functions are selected and confirm the action with the **Select** button.
 1. Go to the **Full** view of the pop-up and specify the **Display name**, **Name**, **Descriptions**, and **API URL suffix**. [[Learn more about these settings in the official Azure documentation](https://docs.microsoft.com/azure/api-management/import-and-publish).
-1. Add **Starter** and **Unlimited** in the **Products** field.
 1. Select **Create**.
 
 ### Test APIs
