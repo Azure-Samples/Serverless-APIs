@@ -1,6 +1,6 @@
 # Exercise 1: Provisioning Azure Resources
 
-As the focus of this workshop is to learn how to deploy, operate and integrate API Managente with Azure Functions, we will use a simple script to provision all the infrastructure to run thru the other exercises and focus on what we want.
+As the focus of this workshop is to learn how to deploy, operate and integrate Azure API Management with Azure Functions, we will use a simple script to provision all the infrastructure to run through the other exercises and focus on what we want.
 
 There are two options to run our provisioning script.
 
@@ -21,11 +21,11 @@ Azure Functions Core Tools includes a version of the same runtime that powers Az
 Perform the following steps to deploy your Workshop infrastructure: 
 
 1 - Clone this repo to your local computer or to your Linux Azure Cloud Shell
-2 - Run the [serverless-apim-setup.sh] to deploy our workshop infrastructure by runnung the follow command:
+2 - Run the [serverless-apim-setup.sh] to deploy our workshop infrastructure by running the following command:
 ```
  $ ./serverless-apim.sh
 ```
-This script is a non interactive script, it will generate a randon number to use it as a sufix* for all services listed bellow: 
+This script is a non-interactive script. It will generate a randon number to use it as a suffix* for all services listed bellow: 
 
 - **serverless-sample** Resource Group
 - **serverlesssample** Storage Account
@@ -34,7 +34,7 @@ This script is a non interactive script, it will generate a randon number to use
 - **serverless-sample-reviews** Azure Function App
 - **serverless-apis** Azure API Management Consuption Plan Instance
 
-> All output commands will be saved in ***serverles-apim-setup.log*** file in the main folder of this repo. 
+> All output commands will be saved in ***serverless-apim-setup.log*** file in the main folder of this repo. 
 
 Check if you have all these services deployed to your Azure Subscription. 
 
