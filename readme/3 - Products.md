@@ -56,4 +56,4 @@ Since we created our API Management product to require subscriptions, we now nee
 
 ## Next steps
 
-TODO: link to exercise 4
+[Apply policies and revisions](./4%20-%20apply%20policies%20and%20revisions.md)
