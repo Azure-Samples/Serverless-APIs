@@ -42,7 +42,7 @@ With the new revision selected, we can apply a `rate-limit` policy to protect ou
 
     Note: use the `rate-limit` policy; `rate-limit-by-key` isn't available in the Consumption tier.
 
-1. Follow the steps from the ["Test the rate limit (throttling)" section](https://docs.microsoft.com/azure/api-management/transform-api#test-the-rate-limit-throttling) to test the throttling policy.
+1. Follow the steps from the ["Test the rate limit (throttling)"](https://docs.microsoft.com/azure/api-management/transform-api#test-the-rate-limit-throttling) section to test the throttling policy.
 
 1. Follow the steps from the ["Make your revision current and add a change log entry"](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started-revise-api#make-your-revision-current-and-add-a-change-log-entry) section to make the new revision the current one.
 
@@ -60,4 +60,4 @@ You can also apply policies in Visual Studio Code, using [API Management's Visua
 
 ## Next steps
 
-[Monitoring](5%20-%20Monitoring.md)
+[Monitoring](./5%20-%20Monitoring.md)
