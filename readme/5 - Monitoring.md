@@ -1,14 +1,14 @@
-# Exercise 6: Monitoring APIs
+# Exercise 5: Monitoring APIs
 
-In this exercise, we will look at how we can monitor our APIs for insights. 
+In this exercise, we will look at how we can monitor our APIs for insights.
 
-## Why use Application Insights with API Management?
+## Why use Application Insights with API Management
 
 As an Azure service, Azure API Management can leverage the capabilities of [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) for collecting, analyzing, and acting on your APIs' telemetry. You can think of Azure Monitor as an umbrella of monitoring and management services that leverage a common, powerful data collection and analysis platform.
 
-For instance, it is possible to integrate Azure API Management with Azure Application Insights, which is a service that monitors the availability, performance, and usage of your Web apps and APIs. 
+For instance, it is possible to integrate Azure API Management with Azure Application Insights, which is a service that monitors the availability, performance, and usage of your Web apps and APIs.
 
-When starting with an existing API Management service, you can [How to integrate Azure API Management with Azure Application Insights](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights) read for specific steps. 
+When starting with an existing API Management service, you can [How to integrate Azure API Management with Azure Application Insights](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights) read for specific steps.
 
 However, for our purposes, when we provisioned our Azure services, we also configured both our API Management service and our Function Apps to leverage a common Application Insights resource. This means that our API calls should already be sending telemetry to Application Insights.
 
@@ -22,6 +22,7 @@ In this exercise, we will scratch the surface of what is available to us when mo
 1. On the overview section, notice there is a already a dashboard available with some basic metric charts, such as **Capacity**, **Gateway requests**, and **request duration**. This is a useful starting point for a general overview of API Management telemetry and can provide useful insights for taking action. Capacity, for instance, can be a useful indicator for deciding whether to upgrade a tier or scale out the number of units (for dedicated API Management tiers).
 
 ### Explore Application Insights Integration
+
 Sometimes you need more detailed telemetry than the standard API Management overview dashboard.
 
 1. Navigate to your API Management service in the Azure portal.
