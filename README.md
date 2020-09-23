@@ -1,57 +1,41 @@
-# Project Name
+# Serverless APIs in Azure - workshop
 
-(short, 1-3 sentenced, description of the project)
+This repository contains a set of exercises, which cover the basics of building and managing serverless APIs in Microsoft Azure - with Azure Functions, Azure API Management, and Azure Application Insights.
 
-## Features
+## What are serverless APIs?
 
-This project framework provides the following features:
+// TODO
 
-* Feature 1
-* Feature 2
-* ...
+## Repository contents
 
-## Getting Started
+The repository includes a sample implementation of Azure Functions and six exercises:
 
-### Prerequisites
+1. [Setting up the Azure environment](./readme/1%20-%20Provision%20Azure%20resources.md)
+1. [Exposing Functions as APIs in API Management](./readme/2%20-%20Import%20APIs.md)
+1. [Packaging APIs with Products](./readme/3%20-%20Products.md)
+1. [Applying API runtime policies](./readme/4%20-%20apply%20policies%20and%20revisions.md)
+1. [Monitoring APIs with Application Insights](./readme/5%20-%20Monitoring.md)
+1. [Versioning APIs](./readme/6%20-%20Versions.md)
 
-(ideally very short, if any)
+The exercises are entry-level and require minimal knowledge of programming. Each exercise contains references to additional resources, such as documentation, blog posts, or conference session recordings.
 
-- OS
-- Library version
-- ...
+After completing the workshop, you will be able to:
 
-### Installation
+- Understand and articulate benefits of using API management and API gateway solutions in serverless architectures
+- Expose serverless services as APIs in Azure API Management
+- Protect, accelerate, and transform APIs with runtime policies
+- Observe the API traffic and identify problems across all layers of the stack
+- Evolve your APIs with versions, without breaking client applications
+- ... and more!
 
-(ideally very short)
+## Getting started
 
-- npm install [package name]
-- mvn install
-- ...
+Get started with the first exercise: [Exercise 1: Provisioning Azure Resources](./readme/1%20-%20Provision%20Azure%20resources.md).
 
-### Quickstart
-(Add steps to get up and running quickly)
+## Related resources
 
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+- Blog post one
+- Blog post two
+- Azure Functions: [product overview](https://azure.microsoft.com/services/functions/), [documentation](https://docs.microsoft.com/azure/azure-functions/)
+- Azure API Management: [product overview](https://aka.ms/apimlearn), [documentation](https://aka.ms/apimdocs)
+- [Serverless APIs module on Microsoft Learn](https://docs.microsoft.com/learn/modules/build-serverless-api-with-functions-api-management/)
