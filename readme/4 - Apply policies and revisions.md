@@ -60,4 +60,4 @@ You can also apply policies in Visual Studio Code, using [API Management's Visua
 
 ## Next steps
 
-TODO: link to exercise 5
+[Monitoring](5%20-%20Monitoring.md)
