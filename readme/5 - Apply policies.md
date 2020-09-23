@@ -1,6 +1,14 @@
-# Exercise 5: Apply API policies
+# Exercise 4: Apply API policies and revisions
 
-In this exercise we will protect our API from abuse by applying a throttling policy. We will also explore the Visual Studio Code extension and learn its capabilities.
+In this exercise we will protect an API from abuse by applying a throttling policy. We will also leverage revisions in API Management to make the change in a safe manner as well as provide helpful lifecycle management features.
+
+This may also be an opportunity to explore the Visual Studio Code extension for API Management and learn its capabilities.
+
+## What are Revisions in API Management
+
+Revisions provide a mechanism for making changes to your APIs without disrupting the developers who consume them. With revisions, we can document and try our changes to APIs in a secure manner and then promote those changes when they are ready. APIs can have multiple revisions, which allows us to rollback changes if necessary.
+
+Learn more about [revisions in Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-revisions).
 
 ## Why use policies in API Management
 
@@ -10,23 +18,33 @@ Learn about policies in [the official Azure documentation](https://docs.microsof
 
 ## Steps
 
-### Apply and test the `rate-limit` policy
+### Create a new revision
 
-In this exercise, we will apply a `rate-limit` policy to protect our API from abnormal usage. We will limit the number of API calls to 3 per 15s per API subscription key.
+Before introducing non-breaking changes, we will create a new revision. This will allow us to try the changes without affecting any of the consumers.
 
 1. Navigate to your API Management service in the Azure portal.
-1. Go to **APIs** and select an API.
+1. Go to **APIs** and select an existing API.
+1. Click the **Revisions** tab from the menu and select **+ Add revision**.
+1. Provide a description and click the **Create** button.
+
+### Apply and test the `rate-limit` policy
+
+With the new revision selected, we can apply a `rate-limit` policy to protect our API from abnormal usage. We will limit the number of API calls to 3 per 15s per API subscription key.
+
+1. Confirm that the new revision has been selected from the menu bar.
 1. Apply the following `rate-limit` policy on your API (all operations level):
-    
+
     ```XML
        <rate-limit calls="3" renewal-period="15" />
     ```
 
-    Check [the "Protect an API by adding rate limit policy (throttling)" section of the official "Protect your API" tutorial](https://docs.microsoft.com/azure/api-management/transform-api#protect-an-api-by-adding-rate-limit-policy-throttling) for more precise steps.
+    Check the ["Protect an API by adding rate limit policy (throttling)"](https://docs.microsoft.com/azure/api-management/transform-api#protect-an-api-by-adding-rate-limit-policy-throttling) section of the official "Protect your API" tutorial for more precise steps.
 
     Note: use the `rate-limit` policy; `rate-limit-by-key` isn't available in the Consumption tier.
 
 1. Follow the steps from the ["Test the rate limit (throttling)" section](https://docs.microsoft.com/azure/api-management/transform-api#test-the-rate-limit-throttling) to test the throttling policy.
+
+1. Follow the steps from the ["Make your revision current and add a change log entry"](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started-revise-api#make-your-revision-current-and-add-a-change-log-entry) section to make the new revision the current one.
 
 ### Explore Visual Studio Code extension
 
@@ -38,7 +56,8 @@ You can also apply policies in Visual Studio Code, using [API Management's Visua
 - [Understand policy expressions](https://docs.microsoft.com/azure/api-management/api-management-policy-expressions).
 - [Get API Management's Visual Studio Code extension](https://aka.ms/apim/vscext)
 - [Explore examples of advanced policies and get the policy expressions cheatsheet](https://aka.ms/apimpolicyexamples)
+- [Revisions in Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-revisions)
 
 ## Next steps
 
-TODO: link to exercise 6
+TODO: link to exercise 5
