@@ -41,4 +41,4 @@ Sometimes you need more detailed telemetry than the standard API Management over
 
 ## Next steps
 
-TODO: link to exercise 6
+[Publish a new version](./6%20-%20Versions.md)
