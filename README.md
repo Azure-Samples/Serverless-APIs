@@ -1,23 +1,6 @@
 # Serverless APIs in Azure - workshop
 
-This repository contains a set of exercises, which cover the basics of building and managing serverless APIs in Microsoft Azure - with Azure Functions, Azure API Management, and Azure Application Insights.
-
-## What are serverless APIs?
-
-// TODO
-
-## Repository contents
-
-The repository includes a sample implementation of Azure Functions and six exercises:
-
-1. [Setting up the Azure environment](./readme/1%20-%20Provision%20Azure%20resources.md)
-1. [Exposing Functions as APIs in API Management](./readme/2%20-%20Import%20APIs.md)
-1. [Packaging APIs with Products](./readme/3%20-%20Products.md)
-1. [Applying API runtime policies](./readme/4%20-%20apply%20policies%20and%20revisions.md)
-1. [Monitoring APIs with Application Insights](./readme/5%20-%20Monitoring.md)
-1. [Versioning APIs](./readme/6%20-%20Versions.md)
-
-The exercises are entry-level and require minimal knowledge of programming. Each exercise contains references to additional resources, such as documentation, blog posts, or conference session recordings.
+This repository contains a set of entry-level exercises, which cover the basics of building and managing serverless APIs in Microsoft Azure - with Azure Functions, Azure API Management, and Azure Application Insights.
 
 After completing the workshop, you will be able to:
 
@@ -27,6 +10,23 @@ After completing the workshop, you will be able to:
 - Observe the API traffic and identify problems across all layers of the stack
 - Evolve your APIs with versions, without breaking client applications
 - ... and more!
+
+## What are serverless APIs?
+
+// TODO
+
+## Repository contents
+
+This repository contains source code of a sample serverless API implemented with Azure Functions as well as six exercises:
+
+1. [Setting up the Azure environment](./readme/1%20-%20Provision%20Azure%20resources.md)
+1. [Exposing Functions as APIs in API Management](./readme/2%20-%20Import%20APIs.md)
+1. [Packaging APIs with Products](./readme/3%20-%20Products.md)
+1. [Applying API runtime policies](./readme/4%20-%20apply%20policies%20and%20revisions.md)
+1. [Monitoring APIs with Application Insights](./readme/5%20-%20Monitoring.md)
+1. [Versioning APIs](./readme/6%20-%20Versions.md)
+
+The exercises require minimal knowledge of programming. Each exercise contains references to additional resources, such as documentation, blog posts, or conference session recordings.
 
 ## Getting started
 
