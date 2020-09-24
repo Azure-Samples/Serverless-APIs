@@ -13,7 +13,13 @@ After completing the workshop, you will be able to:
 
 ## What are serverless APIs?
 
-// TODO
+Serverless computing enables developers to build applications faster by eliminating the need for them to manage infrastructure. With serverless applications, the cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code.
+
+[Microsoft Azure offers a portfolio of serverless technologies](https://azure.microsoft.com/solutions/serverless/), which can be used for building APIs. In this workshop, we will implement APIs end-to-end with Azure Functions and Azure API Management, realizing the benefits of serverless solutions:
+
+- **Automated scaling up and down, based on API traffic**, to serve bursty payloads and handle explosive growth of services
+- **Architectural simplicity without no infrastructure management overhead**, to spend resources on innovating and solving business problems rather than managing infrastructure
+- **Pay-per-consumption pricing model**, to reduce the barrier of entry to the market
 
 ## Repository contents
 
@@ -36,6 +42,8 @@ Get started with [Exercise 1: Provisioning Azure Resources](./readme/1%20-%20Pro
 
 - Blog post one
 - Blog post two
+- [Benefits of API Management in microservices-based architectures](https://aka.ms/apimserverlessblog)
 - Azure Functions: [product overview](https://azure.microsoft.com/services/functions/), [documentation](https://docs.microsoft.com/azure/azure-functions/)
 - Azure API Management: [product overview](https://aka.ms/apimlearn), [documentation](https://aka.ms/apimdocs)
+- [Azure Serverless overview](https://azure.microsoft.com/overview/serverless-computing/)
 - [Serverless APIs module on Microsoft Learn](https://docs.microsoft.com/learn/modules/build-serverless-api-with-functions-api-management/)
