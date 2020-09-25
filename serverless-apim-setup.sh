@@ -22,7 +22,7 @@ ECHO 'LETS START'$green':)'$reset
 ECHO 
 ECHO 'Output results will be saved to '$red'serverless-apim-setup.log'$reset' file ...'
 ECHO
-ECHO '- Creating '$red$resourceGroup$reset' Resource Group ...'
+ECHO '- Creating Resource Group '$red$resourceGroup$reset'...'
 az group create -n $resourceGroup -l $location --output json > serverless-apim-setup.log
 
 ECHO '- Creating '$red$storageAccountName$reset' Storage Account ...' 
@@ -33,17 +33,17 @@ appInsightsInstrumentationKey=$(az resource create -g $resourceGroup -n $appInsi
 ECHO '- Application Insights Instrumentation Key: '$red$appInsightsInstrumentationKey$reset
 
 ECHO '- Creating '$red$productsFunctionName$reset' Function App ...' 
-az functionapp create -n $productsFunctionName --storage-account $storageAccountName --consumption-plan-location $location --app-insights $appInsightsName --runtime dotnet -g $resourceGroup  --functions-version $functionsRuntimeVersion  >> serverless-apim-setup.log
+az functionapp create -n $productsFunctionName --storage-account $storageAccountName --consumption-plan-location $location --app-insights $appInsightsName --app-insights-key $appInsightsInstrumentationKey  -g $resourceGroup --runtime dotnet --functions-version $functionsRuntimeVersion  >> serverless-apim-setup.log
 
 ECHO '- Creating '$red$reviewsFunctionName$reset' Function App ...'
-az functionapp create -n $reviewsFunctionName --storage-account $storageAccountName --consumption-plan-location $location --app-insights $appInsightsName --runtime dotnet -g $resourceGroup  --functions-version $functionsRuntimeVersion --runtime node >> serverless-apim-setup.log
+az functionapp create -n $reviewsFunctionName --storage-account $storageAccountName --consumption-plan-location $location --app-insights $appInsightsName  -g $resourceGroup  --functions-version $functionsRuntimeVersion --runtime node >> serverless-apim-setup.log
 
 ECHO '- Creating '$red'serverless-api'$rand$reset' API Management [Consuption Plan] ...'
 az apim create --name serverless-apis$rand -g $resourceGroup -l eastus --publisher-email myemail@mycompany.com --publisher-name microsoft --sku-name consumption -o json >> serverless-apim-setup.log
 
 ECHO '- Deploying '$red$productsFunctionName$reset' to '$red$productsFunctionName$reset' Function App ...'
 cd apis/Products
-func azure functionapp publish  $productsFunctionName --output json >> ../../serverless-apim-setup.log
+func azure functionapp publish  $productsFunctionName --csharp --output json >> ../../serverless-apim-setup.log
 
 ECHO '- Deploying '$red$reviewsFunctionName$reset' to '$red$reviewsFunctionName$reset' Function App ...'
 cd ../Reviews
