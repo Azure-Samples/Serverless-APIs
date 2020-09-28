@@ -11,6 +11,10 @@ After completing the workshop, you will be able to:
 - Evolve your APIs with versions, without breaking client applications
 - ... and more!
 
+![Serverless APIs](./readme/images/serverless-apis.png)
+
+The image above illustrates the overall solution that will be created during the workshop.
+
 ## What are serverless APIs?
 
 Serverless computing enables developers to build applications faster by eliminating the need for them to manage infrastructure. With serverless applications, the cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code.
