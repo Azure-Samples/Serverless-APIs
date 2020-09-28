@@ -11,7 +11,6 @@ There are two options to run the provisioning script:
 
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
 * [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools)
-* [Azure API Management CLI Extension](https://docs.microsoft.com/cli/azure/azure-cli-extensions-overview?view=azure-cli-latest)
 
 Azure Functions Core Tools includes a version of the same runtime that powers Azure Functions runtime. You can run it on your local development computer. It also provides commands to create functions, connect to Azure, and deploy Functions projects.
 
@@ -44,6 +43,12 @@ Perform the following steps to provision the cloud resources:
 3. Check if you have all these services deployed to your Azure Subscription.
 
     ![setup](images/serverless-sample-setup.png)
+
+4. For each created Function App:
+
+    a. Navigate to it in the Azure portal.
+    b. Click on Application Insights in the menu on the left.
+    c. Assign the newly created Application Insights service. You can refer to [the official Azure documentation for details](https://docs.microsoft.com/azure/azure-functions/functions-monitoring?tabs=cmd#view-telemetry-in-application-insights).
 
 ## Related resources
 

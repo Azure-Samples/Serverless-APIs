@@ -24,6 +24,7 @@ Perform the following steps **for both Function Apps you provisioned in the prev
 
 1. Navigate to your Function App in the Azure portal.
 1. Select **API Management** section from the menu on the left.
+1. If you're performing this step for the first Function App, select **Create new service**. Otherwise, skip the step - you should already have your API Management service provisioned.
 1. Pick the API Management service name from the dropdown.
 1. Leave the default **Create new API** option in the API dropdown.
 1. Select the option **Enable Application Insights**.

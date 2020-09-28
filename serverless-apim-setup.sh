@@ -65,9 +65,6 @@ az functionapp create -n $productsFunctionName --storage-account $storageAccount
 ECHO '- Creating '$red$reviewsFunctionName$reset' Function App ...'
 az functionapp create -n $reviewsFunctionName --storage-account $storageAccountName --consumption-plan-location $location --app-insights $appInsightsName  -g $resourceGroup  --functions-version $functionsRuntimeVersion --runtime node >> serverless-apim-setup.log
 
-ECHO '- Creating '$red'serverless-api'$rand$reset' API Management [Consuption Plan] ...'
-az apim create --name serverless-apis$rand -g $resourceGroup -l eastus --publisher-email myemail@mycompany.com --publisher-name microsoft --sku-name consumption -o json >> serverless-apim-setup.log
-
 ECHO '- Deploying '$red$productsFunctionName$reset' to '$red$productsFunctionName$reset' Function App ...'
 cd apis/Products
 func azure functionapp publish  $productsFunctionName --csharp --output json >> ../../serverless-apim-setup.log
@@ -76,12 +73,6 @@ ECHO '- Deploying '$red$reviewsFunctionName$reset' to '$red$reviewsFunctionName$
 cd ../Reviews
 func azure functionapp publish $reviewsFunctionName --typescript --output json >> ../../serverless-apim-setup.log
 cd ../..
-
-token=$(az account get-access-token --query 'accessToken' -o tsv)
-accountId=$(az account show --query 'id' -o tsv)
-
-ECHO '- Attaching '$red$applicationInsights$reset' App Insights to '$red$ApiManagement$reset' Aplication Management Instance ...'
-curl -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer ${token}" -d '{"properties": {"loggerType": "applicationInsights", "description": "adding a new logger", "credentials": {"instrumentationKey":'"$appInsightsInstrumentationKey"' }}}' https://management.azure.com/subscriptions/$accountId/resourceGroups/$resourceGroup/providers/Microsoft.ApiManagement/service/serverless-apis$rand/loggers/$appInsightsName?api-version=2019-12-01 >> serverless-apim-setup.log
 
 ECHO $green'=============================================================='
 ECHO
