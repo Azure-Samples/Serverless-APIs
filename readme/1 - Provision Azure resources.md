@@ -17,12 +17,17 @@ Azure Functions Core Tools includes a version of the same runtime that powers Az
 
 ## Steps
 
-Perform the following steps to deploy your Workshop infrastructure: 
+Perform the following steps to provision the cloud resources: 
 
 1. Clone this repo to your local computer or to your Linux Azure Cloud Shell
-2. Run the [serverless-apim-setup.sh] to deploy our workshop infrastructure by runnung the follow command:
+2. Run the `serverless-apim-setup.sh` script:
+    ```sh
+        $ ./serverless-apim-setup.sh -s <SUBSCRIPTION ID>
     ```
-     $ ./serverless-apim.sh -s <SUBSCRIPTION ID>
+
+    For example, on Windows:
+    ```sh
+        .\serverless-apim-setup.sh -s "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
     ```
     
     This script doesn't require interactions. It will provision the following resources with a randomly-generated suffix:
