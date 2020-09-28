@@ -28,7 +28,8 @@ Sometimes you need more detailed telemetry than the standard API Management over
 1. Navigate to your API Management service in the Azure portal.
 1. On the left, go to **Application Insights**. You should see the name of an associated Application Insights resource listed in a table on the right.
 1. On the row containing the name of the Application Insights resource, click on the ellipses (**...**) and select **Go to**. This will take you to the Application Insights resource overview page. Notice that Application Insights also has a small dashboard on its Overview section.
-1. Click on **Logs** at the top.
+1. Click on **Application Map** on the left. The Application Map feature will allow you to see an overview of all associated application components reporting telemetry to the Application Insights resource. Here you can see the API Management resource along with the Function App backends. From the map, you can drill into each component to see associated telemetry. You can watch the Azure Friday video [Azure API Management for Serverless Applications](https://youtu.be/82q67x769XE?t=438) for brief demo on the Application Map.
+1. Next, click on **Logs** at the top.
 1. You should now see a dialog of **Example queries** that you can use to try on the data collected by Application Insights from the associated API Management and Function App instances. The query syntax is in a language called Kusto Query Language or KQL for short. You can learn more about KQL [here](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/query-language).
 1. Find the **Failed requests - top 10** example query and click **Run**. Recall that we added a rate-limit policy from a previous exercise. If the rate-limit was triggered, it would result in a failed request.
 1. Click on **Example queries** at the top and then find the **Exceptions causing request failures** sample query and click **Run**. We should now see a count of the tracked HTTP 429 status codes caused by triggering the rate-limit policy.
@@ -38,6 +39,7 @@ Sometimes you need more detailed telemetry than the standard API Management over
 - [Monitor published APIs](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-use-azure-monitor)
 - [How to integrate Azure API Management with Azure Application Insights](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights)
 - [KQL Query Language Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/query-language)
+- [Azure API Management for Serverless Applications video](https://youtu.be/82q67x769XE?t=438)
 
 ## Next steps
 
