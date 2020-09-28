@@ -3,6 +3,10 @@ set -euo pipefail
 
 IFS=$'\n\t'
 
+ECHO "Logging into your account"
+az login
+ECHO
+
 subscriptionId=$(az account show --query 'id' -o tsv)
 
 while getopts ":s:" arg; do
@@ -34,7 +38,7 @@ reset=`tput sgr0`
 ECHO $green'==========================================================' 
 ECHO
 ECHO   $red'WELCOME TO THE API MANAGEMENT AND AZURE FUNCTIONS WORKSHOP'
-ECHO
+ECHO 
 ECHO "Setting Subscription Id to: " $red$subscriptionId$reset
 az account set --subscription $subscriptionId
 ECHO
