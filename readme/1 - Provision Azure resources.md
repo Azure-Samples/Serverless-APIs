@@ -23,9 +23,10 @@ Perform the following steps to deploy your Workshop infrastructure:
 1 - Clone this repo to your local computer or to your Linux Azure Cloud Shell
 2 - Run the [serverless-apim-setup.sh] to deploy our workshop infrastructure by runnung the follow command:
 ```
- $ ./serverless-apim.sh
+ $ ./serverless-apim.sh -s <SUBSCRIPTION ID>
 ```
 This script is a non interactive script, it will generate a randon number to use it as a sufix* for all services listed bellow: 
+
 
 - **serverless-sample** Resource Group
 - **serverlesssample** Storage Account

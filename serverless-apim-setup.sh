@@ -1,6 +1,25 @@
 #!/bin/bash
+set -euo pipefail
 
-location="eastus"
+IFS=$'\n\t'
+
+subscriptionId=$(az account show --query 'id' -o tsv)
+
+while getopts ":s:" arg; do
+    case "${arg}" in
+        s)
+            subscriptionId=${OPTARG}
+        ;;
+    esac
+done
+
+if [[ -z "$subscriptionId" ]]; then
+    echo "Enter the Subscription ID:"
+    read subscriptionId
+    [[ "${subscriptionId:?}" ]] 
+fi
+
+location="eastus" 
 rand=$(awk -v min=1000 -v max=9999 'BEGIN{srand(); print int(min+rand()*(max-min+1))}')
 storageAccountName="serverlesssample$rand"
 appInsightsName="serverless-sample$rand"
@@ -15,6 +34,10 @@ reset=`tput sgr0`
 ECHO $green'==========================================================' 
 ECHO
 ECHO   $red'WELCOME TO THE API MANAGEMENT AND AZURE FUNCTIONS WORKSHOP'
+ECHO
+ECHO "Setting Subscription Id to: " $red$subscriptionId$reset
+az account set --subscription $subscriptionId
+ECHO
 ECHO
 ECHO $green'=========================================================='  
 ECHO
