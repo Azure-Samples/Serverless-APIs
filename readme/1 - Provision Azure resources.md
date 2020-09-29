@@ -28,7 +28,7 @@ Perform the following steps to provision the cloud resources:
     ```sh
         .\serverless-apim-setup.sh -s "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
     ```
-    
+   
     This script doesn't require interactions. It will provision the following resources with a randomly-generated suffix:
     
     - **serverless-sample** Resource Group
@@ -37,7 +37,7 @@ Perform the following steps to provision the cloud resources:
     - **serverless-sample-products** Azure Function App
     - **serverless-sample-reviews** Azure Function App
     
-    Output commands will be saved in `serverless-apim-setup.log` file in the main folder of this repo. All the services will be deployed in the East US region, unless you specify a different region in the *location* variable in the `serverless-apim.sh` file. 
+    Output commands will be saved in `serverless-apim-setup.log` file in the main folder of this repo. All the services will be deployed in the East US region, unless you specify a different region in the *location* variable in the `serverless-apim.sh` file.
 
 3. You should have all the services mentioned above deployed in your Azure subscription.
 
@@ -51,9 +51,9 @@ Perform the following steps to provision the cloud resources:
 
 ## Related resources
 
-* [Install the Core Tools and dependencies.](https://github.com/Azure/azure-functions-core-tools)
-* [Run the function locally](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash#start)
-* [Publish the project to Azure.](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash#publish)
+* [Install the Core Tools and dependencies](https://github.com/Azure/azure-functions-core-tools)
+* [Run the Function locally](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash#start)
+* [Publish the project to Azure](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash#publish)
 
 ## Next steps
 
