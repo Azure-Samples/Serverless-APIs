@@ -11,7 +11,6 @@ There are two options to run the provisioning script:
 
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli-macos?view=azure-cli-latest)
 * [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools)
-* [Azure API Management CLI Extension](https://docs.microsoft.com/cli/azure/azure-cli-extensions-overview?view=azure-cli-latest)
 
 Azure Functions Core Tools includes a version of the same runtime that powers Azure Functions runtime. You can run it on your local development computer. It also provides commands to create functions, connect to Azure, and deploy Functions projects.
 
@@ -37,13 +36,18 @@ Perform the following steps to provision the cloud resources:
     - **serverless-sample** Application Insights
     - **serverless-sample-products** Azure Function App
     - **serverless-sample-reviews** Azure Function App
-    - **serverless-apis** Azure API Management (Consumption tier)
     
     Output commands will be saved in `serverless-apim-setup.log` file in the main folder of this repo. All the services will be deployed in the East US region, unless you specify a different region in the *location* variable in the `serverless-apim.sh` file. 
 
-3. Check if you have all these services deployed to your Azure Subscription.
+3. You should have all the services mentioned above deployed in your Azure subscription.
 
-    ![setup](images/serverless-sample-setup.png)
+    ![Resources](images/1-serverless-sample-setup.png)
+
+4. For each created Function App:
+
+    1. Navigate to it in the Azure portal.
+    1. Click on Application Insights in the menu on the left.
+    1. Assign an existing resource - the newly created Application Insights service. You can refer to [the official Azure documentation for details](https://docs.microsoft.com/azure/azure-functions/functions-monitoring?tabs=cmd#view-telemetry-in-application-insights).
 
 ## Related resources
 

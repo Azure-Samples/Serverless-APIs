@@ -1,8 +1,8 @@
 # Exercise 3: Azure API Management Products
 
-In the last exercise, we imported our serverless APIs into our API Management service. 
+In the last exercise, we imported our serverless APIs into our API Management service. In this exercise, we will look at the API Management **product** concept.
 
-In this exercise, we will look at the API Management **product** concept.
+![Product details](images/3-product-details.png)
 
 ## What is an API Management product and why use it?
 
@@ -10,11 +10,11 @@ An API Management Product is a way to organize and manage one or more APIs. You 
 
 The benefits of using products include:
 
-- the ability to package one or more APIs to your developers (consumers)
-- the ability to create both products requiring subscriptions (**Protected**) and products which do not (**Open**)
-- the ability to publish/unpublish products for general availability
-- the ability to apply policy (such as usage quota), specify whether approval is required, legal terms at a product level when bundling APIs for business reasons
-- the ability to control visibility and access to products within the [API Management Developer Portal](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts#--developer-portal) by associating to groups (applies only to dedicated [API Management tiers](https://docs.microsoft.com/en-us/azure/api-management/api-management-features) only)
+- Ability to package one or more APIs to your developers (consumers)
+- Ability to create both products requiring subscriptions (**Protected**) and products which do not (**Open**)
+- Ability to publish/unpublish products for general availability
+- Ability to apply policy (such as usage quota), specify whether approval is required, legal terms at a product level when bundling APIs for business reasons
+- Ability to control visibility and access to products within the [API Management Developer Portal](https://docs.microsoft.com/azure/api-management/api-management-key-concepts#--developer-portal) by associating to groups (applies only to dedicated [API Management tiers](https://docs.microsoft.com/azure/api-management/api-management-features) only; not available in the Consumption tier)
 
 ## Steps
 
@@ -33,11 +33,11 @@ The benefits of using products include:
 
 ### Create a Product Subscription
 
-We need to create a subscription in order to call our API as part of this product. A subscription is basically a set of two keys for associated APIs. You need to provide one of the subscription keys when invoking a protected API by providing the key in the **Ocp-Apim-Subscription-Key** HTTP header.
+We need to create a subscription in order to call our API as part of this product. A subscription is a set of two keys for associated APIs. You need to provide one of the subscription keys when invoking a protected API by providing the key in the **Ocp-Apim-Subscription-Key** HTTP header.
 
 Since we created our API Management product to require subscriptions, we now need to create a subscription to that product to generate an initial set of keys to use.
 
-1. On the API Management instance in the Azure portal, select the  **Products** section from the menu on the left.
+1. In your API Management instance in the Azure portal, select the **Products** section from the menu on the left.
 1. Select the product you created from the previous section. This will take you to the product overview for that product.
 1. Select the product **Subscriptions** menu option.
 1. Click **+ Add Subscription** to add a new subscription for the product.
@@ -46,13 +46,15 @@ Since we created our API Management product to require subscriptions, we now nee
 1. Click **Save**.
 1. At this point, you should see your new subscription listed for the product. To view the actual key values for the subscription, click on the ellipses **...** and then **Show/hide keys** menu option.
 
+    ![Manage subscriptions](images/3-subscriptions.png)
+
 ## Related resources
 
-- [Learn how to create and publish a product](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-add-products)
-- [Learn more about API Management concepts](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts#--developer-portal)
-- [Learn about policies in API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-policies)
-- [Learn about different API Management tiers](https://docs.microsoft.com/en-us/azure/api-management/api-management-features)
-- [Learn about the API Management developer portal](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts#--developer-portal)
+- [Learn how to create and publish a product](https://docs.microsoft.com/azure/api-management/api-management-howto-add-products)
+- [Learn more about API Management concepts](https://docs.microsoft.com/azure/api-management/api-management-key-concepts#--developer-portal)
+- [Learn about policies in API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-policies)
+- [Learn about different API Management tiers](https://docs.microsoft.com/azure/api-management/api-management-features)
+- [Learn about the API Management developer portal](https://docs.microsoft.com/azure/api-management/api-management-key-concepts#--developer-portal)
 
 ## Next steps
 
