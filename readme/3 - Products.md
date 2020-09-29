@@ -46,7 +46,7 @@ Since we created our API Management product to require subscriptions, we now nee
 1. Click **Save**.
 1. At this point, you should see your new subscription listed for the product. To view the actual key values for the subscription, click on the ellipses **...** and then **Show/hide keys** menu option.
 
-![Manage subscriptions](images/3-subscriptions.png)
+    ![Manage subscriptions](images/3-subscriptions.png)
 
 ## Related resources
 

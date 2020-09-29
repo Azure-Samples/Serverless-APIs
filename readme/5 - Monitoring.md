@@ -24,9 +24,11 @@ For more detailed telemetry and more advanced monitoring scenarios, we will use 
 1. On the left, go to **Application Insights**. You should see the name of an associated Application Insights resource listed in a table on the right.
 
 1. On the row containing the name of the Application Insights resource, click on the ellipses (**...**) and select **Go to**. This will take you to the Application Insights resource overview page. Notice that Application Insights also has a small dashboard on its Overview section.
+
     ![Azure Monitor overview](images/5-monitor-overview.png)
 
 1. Click on **Application map** on the left. The application map feature will allow you to see an overview of all associated application components reporting telemetry to the Application Insights resource. You should be able to see the API Management resource along with the Function App backends. From the map, you can drill into each component to view associated telemetry. You can watch the Azure Friday video [Azure API Management for Serverless Applications](https://youtu.be/82q67x769XE?t=438) for brief demo on the application map.
+
     ![Application map](images/5-application-map.png)
 
 1. Next, select **Logs** in the menu bar on the left.

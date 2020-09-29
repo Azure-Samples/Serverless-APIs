@@ -34,7 +34,7 @@ Perform the following steps **for both Function Apps you provisioned in the prev
 1. Specify the **Display name**, **Name**, **Descriptions**, and **API URL suffix**. [[Learn more about these settings in the official Azure documentation](https://docs.microsoft.com/azure/api-management/import-and-publish).
 1. Select **Create**.
 
-![Create API](images/2-create-api.png)
+    ![Create API](images/2-create-api.png)
 
 ### Test APIs
 
@@ -46,7 +46,7 @@ Perform the following steps to make sure your API has been imported correctly. R
 1. Click on the **Send** button.
 1. You should see a **200 OK** response.
 
-![Test API](images/2-test-api.png)
+    ![Test API](images/2-test-api.png)
 
 ## Related resources
 

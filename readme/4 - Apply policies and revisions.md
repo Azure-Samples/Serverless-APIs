@@ -27,8 +27,6 @@ Before introducing non-breaking changes, we will create a new revision. This wil
 1. Click the **Revisions** tab from the menu and select **+ Add revision**.
 1. Provide a description and click the **Create** button.
 
-![Apply rate limit](images/4-rate-limit.png)
-
 ### Apply and test the `rate-limit` policy
 
 With the new revision selected, we can apply a `rate-limit` policy to protect our API from abnormal usage. We will limit the number of API calls to 3 per 15s per API subscription key.
@@ -43,6 +41,8 @@ With the new revision selected, we can apply a `rate-limit` policy to protect ou
     Check the ["Protect an API by adding rate limit policy (throttling)"](https://docs.microsoft.com/azure/api-management/transform-api#protect-an-api-by-adding-rate-limit-policy-throttling) section of the official "Protect your API" tutorial for more precise steps.
 
     Note: use the `rate-limit` policy; `rate-limit-by-key` isn't available in the Consumption tier.
+
+    ![Apply rate limit](images/4-rate-limit.png)
 
 1. Follow the steps from the ["Test the rate limit (throttling)"](https://docs.microsoft.com/azure/api-management/transform-api#test-the-rate-limit-throttling) section to test the throttling policy.
 
