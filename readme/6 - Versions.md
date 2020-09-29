@@ -9,7 +9,7 @@ Versions are often used when breaking changes are introduced to an API. Some exa
 - Changes in the response type of an operation
 - Released-based versions, such as **alpha** or **beta**, that are available for a limited time
 
-Learn more about [versions in Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/).
+Learn more about [versions in Azure API Management](https://docs.microsoft.com/azure/api-management/).
 
 ## Steps
 
@@ -18,7 +18,7 @@ Learn more about [versions in Azure API Management](https://docs.microsoft.com/e
 1. Navigate to your API Management service in the Azure portal.
 1. Go to **APIs** and select an existing API.
 1. Open the context menu (...) next to the API and select **+ Add version**.
-1. Follow the steps from the ["Choose a versioning scheme"](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started-publish-versions#choose-a-versioning-scheme) section of the official "Add multiple versions" tutorial to configure the scheme.
+1. Follow the steps from the ["Choose a versioning scheme"](https://docs.microsoft.com/azure/api-management/api-management-get-started-publish-versions#choose-a-versioning-scheme) section of the official "Add multiple versions" tutorial to configure the scheme.
 
 ### Associate the version with a product
 
@@ -32,7 +32,7 @@ You can associate an API version with products at the time the version is create
 
 ## Related resources
 
-- [Versions in Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-versions)
-- [Publish multiple versions of your API](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started-publish-versions)
-- [Versions & Revisions](https://azure.microsoft.com/en-us/blog/versions-revisions/)
+- [Versions in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-versions)
+- [Publish multiple versions of your API](https://docs.microsoft.com/azure/api-management/api-management-get-started-publish-versions)
+- [Versions & Revisions](https://azure.microsoft.com/blog/versions-revisions/)
 

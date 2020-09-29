@@ -24,7 +24,7 @@ if [[ -z "$subscriptionId" ]]; then
 fi
 
 location="eastus" 
-rand=$(awk -v min=1000 -v max=9999 'BEGIN{srand(); print int(min+rand()*(max-min+1))}')
+rand=$(awk -v min=100000 -v max=999999 'BEGIN{srand(); print int(min+rand()*(max-min+1))}')
 storageAccountName="serverlesssample$rand"
 appInsightsName="serverless-sample$rand"
 productsFunctionName="serverless-sample-products$rand"

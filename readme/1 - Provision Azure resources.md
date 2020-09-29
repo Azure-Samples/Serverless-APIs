@@ -36,7 +36,6 @@ Perform the following steps to provision the cloud resources:
     - **serverless-sample** Application Insights
     - **serverless-sample-products** Azure Function App
     - **serverless-sample-reviews** Azure Function App
-    - **serverless-apis** Azure API Management (Consumption tier)
     
     Output commands will be saved in `serverless-apim-setup.log` file in the main folder of this repo. All the services will be deployed in the East US region, unless you specify a different region in the *location* variable in the `serverless-apim.sh` file. 
 

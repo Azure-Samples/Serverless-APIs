@@ -4,11 +4,11 @@ In this exercise, we will look at how we can monitor our APIs for insights.
 
 ## Why use Application Insights with API Management
 
-As an Azure service, Azure API Management can leverage the capabilities of [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) for collecting, analyzing, and acting on your APIs' telemetry. You can think of Azure Monitor as an umbrella of monitoring and management services that leverage a common, powerful data collection and analysis platform.
+As an Azure service, Azure API Management can leverage the capabilities of [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) for collecting, analyzing, and acting on your APIs' telemetry. You can think of Azure Monitor as an umbrella of monitoring and management services that leverage a common, powerful data collection and analysis platform.
 
 For instance, it is possible to integrate Azure API Management with Azure Application Insights, which is a service that monitors the availability, performance, and usage of your Web apps and APIs.
 
-When starting with an existing API Management service, you can [How to integrate Azure API Management with Azure Application Insights](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights) read for specific steps.
+When starting with an existing API Management service, you can [How to integrate Azure API Management with Azure Application Insights](https://docs.microsoft.com/azure/api-management/api-management-howto-app-insights) read for specific steps.
 
 However, for our purposes, when we provisioned our Azure services, we also configured both our API Management service and our Function Apps to leverage a common Application Insights resource. This means that our API calls should already be sending telemetry to Application Insights.
 
@@ -30,15 +30,15 @@ Sometimes you need more detailed telemetry than the standard API Management over
 1. On the row containing the name of the Application Insights resource, click on the ellipses (**...**) and select **Go to**. This will take you to the Application Insights resource overview page. Notice that Application Insights also has a small dashboard on its Overview section.
 1. Click on **Application Map** on the left. The Application Map feature will allow you to see an overview of all associated application components reporting telemetry to the Application Insights resource. Here you can see the API Management resource along with the Function App backends. From the map, you can drill into each component to see associated telemetry. You can watch the Azure Friday video [Azure API Management for Serverless Applications](https://youtu.be/82q67x769XE?t=438) for brief demo on the Application Map.
 1. Next, click on **Logs** at the top.
-1. You should now see a dialog of **Example queries** that you can use to try on the data collected by Application Insights from the associated API Management and Function App instances. The query syntax is in a language called Kusto Query Language or KQL for short. You can learn more about KQL [here](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/query-language).
+1. You should now see a dialog of **Example queries** that you can use to try on the data collected by Application Insights from the associated API Management and Function App instances. The query syntax is in a language called Kusto Query Language or KQL for short. You can learn more about KQL [here](https://docs.microsoft.com/azure/azure-monitor/log-query/query-language).
 1. Find the **Failed requests - top 10** example query and click **Run**. Recall that we added a rate-limit policy from a previous exercise. If the rate-limit was triggered, it would result in a failed request.
 1. Click on **Example queries** at the top and then find the **Exceptions causing request failures** sample query and click **Run**. We should now see a count of the tracked HTTP 429 status codes caused by triggering the rate-limit policy.
 
 ## Related resources
 
-- [Monitor published APIs](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-use-azure-monitor)
-- [How to integrate Azure API Management with Azure Application Insights](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights)
-- [KQL Query Language Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/query-language)
+- [Monitor published APIs](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
+- [How to integrate Azure API Management with Azure Application Insights](https://docs.microsoft.com/azure/api-management/api-management-howto-app-insights)
+- [KQL Query Language Documentation](https://docs.microsoft.com/azure/azure-monitor/log-query/query-language)
 - [Azure API Management for Serverless Applications video](https://youtu.be/82q67x769XE?t=438)
 
 ## Next steps

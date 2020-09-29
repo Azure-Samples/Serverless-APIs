@@ -1,14 +1,14 @@
 # Exercise 4: Apply API policies and revisions
 
-In this exercise we will protect an API from abuse by applying a throttling policy. We will also leverage revisions in API Management to make the change in a safe manner as well as provide helpful lifecycle management features.
+In this exercise we will protect an API from abuse by applying a throttling policy. We will also use revisions in API Management to make the change in a safe manner as well as provide helpful lifecycle management features.
 
-This may also be an opportunity to explore the Visual Studio Code extension for API Management and learn its capabilities.
+This exercise is also an opportunity to explore the Visual Studio Code extension for API Management and learn its capabilities.
 
 ## What are Revisions in API Management
 
 Revisions provide a mechanism for making changes to your APIs without disrupting the developers who consume them. With revisions, we can document and try our changes to APIs in a secure manner and then promote those changes when they are ready. APIs can have multiple revisions, which allows us to rollback changes if necessary.
 
-Learn more about [revisions in Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-revisions).
+Learn more about [revisions in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-revisions).
 
 ## Why use policies in API Management
 
@@ -44,7 +44,7 @@ With the new revision selected, we can apply a `rate-limit` policy to protect ou
 
 1. Follow the steps from the ["Test the rate limit (throttling)"](https://docs.microsoft.com/azure/api-management/transform-api#test-the-rate-limit-throttling) section to test the throttling policy.
 
-1. Follow the steps from the ["Make your revision current and add a change log entry"](https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started-revise-api#make-your-revision-current-and-add-a-change-log-entry) section to make the new revision the current one.
+1. Follow the steps from the ["Make your revision current and add a change log entry"](https://docs.microsoft.com/azure/api-management/api-management-get-started-revise-api#make-your-revision-current-and-add-a-change-log-entry) section to make the new revision the current one.
 
 ### Explore Visual Studio Code extension
 
@@ -56,7 +56,7 @@ You can also apply policies in Visual Studio Code, using [API Management's Visua
 - [Understand policy expressions](https://docs.microsoft.com/azure/api-management/api-management-policy-expressions).
 - [Get API Management's Visual Studio Code extension](https://aka.ms/apim/vscext)
 - [Explore examples of advanced policies and get the policy expressions cheatsheet](https://aka.ms/apimpolicyexamples)
-- [Revisions in Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-revisions)
+- [Revisions in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-revisions)
 
 ## Next steps
 
