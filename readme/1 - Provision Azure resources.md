@@ -45,9 +45,9 @@ Perform the following steps to provision the cloud resources:
 
 4. For each created Function App:
 
-    a. Navigate to it in the Azure portal.
-    b. Click on Application Insights in the menu on the left.
-    c. Assign the newly created Application Insights service. You can refer to [the official Azure documentation for details](https://docs.microsoft.com/azure/azure-functions/functions-monitoring?tabs=cmd#view-telemetry-in-application-insights).
+    1. Navigate to it in the Azure portal.
+    1. Click on Application Insights in the menu on the left.
+    1. Assign the newly created Application Insights service. You can refer to [the official Azure documentation for details](https://docs.microsoft.com/azure/azure-functions/functions-monitoring?tabs=cmd#view-telemetry-in-application-insights).
 
 ## Related resources
 
