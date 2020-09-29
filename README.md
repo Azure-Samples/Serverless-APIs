@@ -44,7 +44,6 @@ Get started with [Exercise 1: Provisioning Azure Resources](./readme/1%20-%20Pro
 
 ## Related resources
 
-- [Why businesses should use serverless APIs](https://aka.ms/powering-the-enterprise-serverless-apis)
 - [Benefits of API Management in microservices-based architectures](https://aka.ms/apimserverlessblog)
 - Azure Functions: [product overview](https://azure.microsoft.com/services/functions/), [documentation](https://docs.microsoft.com/azure/azure-functions/)
 - Azure API Management: [product overview](https://aka.ms/apimlearn), [documentation](https://aka.ms/apimdocs)
