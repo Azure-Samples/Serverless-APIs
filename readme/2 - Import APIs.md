@@ -2,6 +2,8 @@
 
 In this exercise we will import just-created Function Apps into API Management to set the ground for the remaining exercises. After importing the APIs, we will test them end-to-end with interactive console in the Azure portal.
 
+![View API](images/2-api-view.png)
+
 ## Why use API Management
 
 [Azure API Management](https://aka.ms/apimlearn) is a globally available cloud service, which lets you simplify management and publishing of your APIs. In our workshop, we will explore its benefits and use it to:
@@ -32,6 +34,8 @@ Perform the following steps **for both Function Apps you provisioned in the prev
 1. Specify the **Display name**, **Name**, **Descriptions**, and **API URL suffix**. [[Learn more about these settings in the official Azure documentation](https://docs.microsoft.com/azure/api-management/import-and-publish).
 1. Select **Create**.
 
+![Create API](images/2-create-api.png)
+
 ### Test APIs
 
 Perform the following steps to make sure your API has been imported correctly. Refer to [the official Azure documentation](https://docs.microsoft.com/azure/api-management/import-and-publish#test-the-new-api-in-the-azure-portal) for more verbose instructions.
@@ -41,6 +45,8 @@ Perform the following steps to make sure your API has been imported correctly. R
 1. Select the **Test** tab.
 1. Click on the **Send** button.
 1. You should see a **200 OK** response.
+
+![Test API](images/2-test-api.png)
 
 ## Related resources
 

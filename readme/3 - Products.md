@@ -1,8 +1,8 @@
 # Exercise 3: Azure API Management Products
 
-In the last exercise, we imported our serverless APIs into our API Management service. 
+In the last exercise, we imported our serverless APIs into our API Management service. In this exercise, we will look at the API Management **product** concept.
 
-In this exercise, we will look at the API Management **product** concept.
+![Product details](images/3-product-details.png)
 
 ## What is an API Management product and why use it?
 
@@ -45,6 +45,8 @@ Since we created our API Management product to require subscriptions, we now nee
 1. Click **Yes** for **Allow tracing**.
 1. Click **Save**.
 1. At this point, you should see your new subscription listed for the product. To view the actual key values for the subscription, click on the ellipses **...** and then **Show/hide keys** menu option.
+
+![Manage subscriptions](images/3-subscriptions.png)
 
 ## Related resources
 

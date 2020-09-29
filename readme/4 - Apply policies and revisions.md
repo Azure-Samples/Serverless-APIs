@@ -27,6 +27,8 @@ Before introducing non-breaking changes, we will create a new revision. This wil
 1. Click the **Revisions** tab from the menu and select **+ Add revision**.
 1. Provide a description and click the **Create** button.
 
+![Apply rate limit](images/4-rate-limit.png)
+
 ### Apply and test the `rate-limit` policy
 
 With the new revision selected, we can apply a `rate-limit` policy to protect our API from abnormal usage. We will limit the number of API calls to 3 per 15s per API subscription key.

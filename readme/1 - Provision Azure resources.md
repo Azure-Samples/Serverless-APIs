@@ -39,9 +39,9 @@ Perform the following steps to provision the cloud resources:
     
     Output commands will be saved in `serverless-apim-setup.log` file in the main folder of this repo. All the services will be deployed in the East US region, unless you specify a different region in the *location* variable in the `serverless-apim.sh` file. 
 
-3. Check if you have all these services deployed to your Azure Subscription.
+3. You should have all the services mentioned above deployed in your Azure subscription.
 
-    ![setup](images/serverless-sample-setup.png)
+    ![Resources](images/1-serverless-sample-setup.png)
 
 4. For each created Function App:
 
