@@ -31,7 +31,7 @@ Perform the following steps **for both Function Apps you provisioned in the prev
 1. Select the option **Enable Application Insights**.
 1. Select the **Link API** button.
 1. Make sure all the Functions are selected and confirm the action with the **Select** button.
-1. Specify the **Display name**, **Name**, **Descriptions**, and **API URL suffix**. [[Learn more about these settings in the official Azure documentation](https://docs.microsoft.com/azure/api-management/import-and-publish).
+1. Specify the **Display name**, **Name**, **Descriptions**, and **API URL suffix**. [Learn more about these settings in the official Azure documentation](https://docs.microsoft.com/azure/api-management/import-and-publish).
 1. Select **Create**.
 
     ![Create API](images/2-create-api.png)
